@@ -19,3 +19,16 @@ $router->get('/key', function(){
 
 	return  str_random(32);
 });
+
+$router->get('/user', function(){
+
+	return "hola mundo lumen!.";
+});
+
+
+$router->get('/users', ['uses' => 'UsersController@index']);
+
+
+
+
+
